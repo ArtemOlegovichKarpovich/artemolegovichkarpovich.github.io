@@ -1,0 +1,36 @@
+﻿figure {
+        background-color: #f6b64c;
+        padding-left: 15px;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        width: 680px;
+        height: 20px;
+        text-align: left;
+        color: white;
+        border-radius: 5px;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 13.3333px;
+        
+    }
+    .div_add_pair {
+        background: linear-gradient(to bottom, #e7f9c7, #f9fdef) fixed;
+        width: 700px;
+        height: 380px;
+        border-radius: 5px;
+    }
+    label{
+        font-family: Arial;
+        /*font-weight: 600;
+        font-size: 13.3333px;*/
+        font-weight: normal; 
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    select{
+        width:300px;
+        margin-left: 5px;
+        font-weight: normal; 
+        font-size: 14px;
+    }

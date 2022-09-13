@@ -1,0 +1,642 @@
+
+    #instrument_content {
+        width: 980px;
+    height: 400 px;
+    }
+
+    #main-content {
+        background-color: #B9DD94;
+    }
+
+    input.hovered_button, button.hovered_button {
+        background-color: #DAD89C;
+        border-size: 2px;
+        border-color: grey;
+        color: black;
+        font-weight: normal;
+        font-size: 10pt;
+        height: 30px;
+        border: 1px solid #0B4C5F;
+    }
+
+    button.hovered_button {
+        height: 50px;
+    }
+
+    input.hovered_button:hover {
+        background-color: #CCCA93;
+        box-shadow: 0 0 15px;
+    }
+
+    button.hovered_buton:hover {
+        background-color: #CCCA93;
+        box-shadow: 0 0 15px;
+    }
+
+    .head {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .head tbody td {
+        border: 1px solid green;
+        width: 980px;
+        height: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 22pt;
+        background-color: #B9DD94;
+        color: #0B4C5F;
+        font-weight: normal;
+    }
+
+    table.pattern {
+        width: 100%;
+        background: #E0E1B2;
+    }
+
+
+    table.pattern tbody td, th, tfoot td {
+        border-color: #7AC77A;
+        border-style: solid;
+        color: #515447;
+        font-weight: normal;
+        text-align: center;
+        border-width: 1px 0px 0px 1px;
+        padding: 5px;
+
+    }
+
+    table.pattern th {
+        background: #DAD89C;
+        font-size: 12pt;
+    }
+
+    table.pattern td input[type='text'], table.pattern td select, textarea {
+        background: #E3ECA5;
+        padding-left: 10px;
+        color: #515447;
+        width: 195px;
+    }
+
+    fieldset label input {
+        background: #E3ECA5;
+        padding-left: 10px;
+        color: #515447;
+    }
+
+    .pattern td:last-child {
+        border-width: 1px 1px 0px 1px;
+    }
+
+    table.pattern td.lastcell {
+        border-width: 1px;
+    }
+
+    table.pattern td#headcell {
+        background-color: #DAD89C;
+        font-size: 14pt;
+    }
+
+    table.c-inp input {
+        text-align: center;
+    }
+
+    a img:hover {
+        box-shadow: 0 0 15px;
+    }
+
+    table.pattern tr[student], table.pattern tr[student] td {
+        cursor: pointer;
+    }
+
+    table.pattern tr.dismiss_flag * {
+        color: red;
+    }
+
+    table.pattern tr.vacation * {
+        color: blue;
+    }
+
+
+    /* Custom */
+    .ui-datepicker {
+        z-index: 2000;
+    }
+
+
+
+    #content table.schedule p {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    table.schedule {
+        width: 100%;
+        /*   border-collapse: collapse;*/
+        border: 2px green solid;
+        text-align: center;
+    }
+
+    table.schedule td {
+        border: 1px green solid;
+    }
+
+    /*  table.schedule td.dayofweek {
+          padding: 0px;
+          width: 30px;
+          height: 120px;
+          text-align: left;
+      }*/
+
+    table.schedule td.pairs {
+        cursor: pointer;
+    }
+
+    table.schedule td.pairs:hover {
+        background-color: #CAFACA;
+    }
+
+    table.schedule td.hoverBG {
+        border: 2px green solid;
+        background-color: E0E1B2;
+    }
+
+    table.schedule td.hoverBG:hover {
+        cursor: pointer;
+        background-color: #BBFFBB;
+    }
+
+
+            
+            body {
+                cursor: default;
+            }
+            
+            body, a div, div.a div {
+                color: #113300;
+            }
+            
+            
+            a, div.a {
+                text-decoration: none;
+                color: #006699;
+                cursor: default;
+                display: inline;
+            }
+            
+            a:hover, div.a:hover {
+                color: #664466;
+            }
+            
+            a[href] {
+                cursor: pointer;
+            }
+            
+            h1 {
+                margin: 20px 0px;
+            }
+            
+            option[disabled] {
+                color: gray;
+            }
+            
+            
+            
+            input[type=button], input[type=submit], button {
+                background-color: #78DC96;
+                border: 1px solid #4BAF59;
+                border-radius: 5px 5px 5px 5px;
+                font-weight: bold;
+                cursor: pointer;
+                margin: 5px;
+                padding: 5px;
+            }
+            
+            input[type=button]:hover, input[type=submit]:hover, button:hover {
+                border-color: #4A774A;
+            }
+            
+            
+            
+            input[type=text], input[type=password], textarea {
+                cursor: text;
+            }
+            
+            input[type=text], input[type=password], select, textarea {
+                background: #C0F6C0;
+                border: 1px solid #7AC77A;
+                border-radius: 5px;
+                padding: 5px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            input[type=text]:focus, input[type=password]:focus, select:focus, textarea:focus {
+                border-color: #4A774A;
+            }
+            
+            input[type=text][disabled], input[type=password][disabled], select[disabled], textarea[disabled],
+            input[type=submit][disabled], input[type=button][disabled], button[disabled] {
+                border-color: #AACAAA;
+                background-color: #D0E9D0;
+                color: gray;
+            }
+            
+            
+            
+            body {
+                background: url('/images/_eluni_2/header.png') no-repeat scroll 0 0 white; //#D5F5D5;
+                margin: 0px;
+                font-family: Times New Roman;
+                overflow: hidden;
+                min-width: 1020px;
+            }
+            
+            
+            
+            #main-header {
+                height: 90px;
+                background: url('/images/_eluni_2/logo2016.png') no-repeat scroll calc(100% - 25px) calc(25px + 10px / 2) / calc(50px - 10px) auto transparent;
+                /*
+                height: 100px;
+                background: url('/images/_eluni_2/logo2016.png') no-repeat scroll calc(100% - 25px) calc(25px + 10px / 2) / calc(75px - 10px) auto transparent;
+                */
+            }
+            
+            #main-header-loadingbar {
+                background: url('/images/_eluni_2/loading.gif') no-repeat scroll center -203px rgba(0, 0, 0, 0);
+                height: 10px;
+                left: 50%;
+                margin-left: -100px;
+                position: absolute;
+                top: 6px;
+                width: 200px;
+                display: none;
+            }
+            
+            #main-menu-container {
+                cursor: default;
+            }
+            
+            
+            #main-menu-container>ul {
+                overflow: hidden;
+            }
+            
+            #main-menu-container>ul>li {
+                float: left;
+            }
+            
+            #main-menu-container>ul>li>a {
+                display: inline-block;
+            }
+            
+            
+            #main-menu-container ul {
+                background: #93D699;//#66CC88;
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            #main-menu-container ul>li:hover {
+                background: #D0F3C3;//#76DC98;
+            }
+            
+            #main-menu-container ul>li>a {
+                text-decoration: none;
+                //text-shadow: 0px 0px 1px #676700;
+                padding: 7px 10px 7px;
+                color: #2A2530;//#0B4C5F;
+                font-size: 21px;
+            }
+            
+            #main-menu-container ul>li:hover>a {
+                color: #0B4C5F;//#FFFF00;
+                text-shadow: 0px 0px 3px #5697AB;//#676700;
+            }
+            
+            
+            #main-menu-container>ul ul {
+                position: absolute;
+                overflow: hidden;
+                max-height: 0px;
+                
+                -moz-transition: 0.3s; 
+                -o-transition: 0.3s; 
+                -webkit-transition: 0.3s; 
+                -ms-transition: 0.3s;
+                transition: 0.3s;
+                
+                box-shadow: 0px 0px 3px #004400;
+            }
+            
+            #main-menu-container>ul ul>li {
+                position: relative;
+            }
+            
+            #main-menu-container>ul ul>li>a {
+                display: block;
+                position: relative;
+            }
+            
+            #main-menu-container ul>li:hover>ul {
+                overflow: visible;
+                max-height: 700px;
+            }
+            
+            #main-menu-container>ul ul ul {
+                top: 0px;
+                left: 100%;
+            }
+            
+            
+            #main-content-wrapper {
+                z-index: -1;
+                position: fixed;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                top: 143px;
+                overflow-y: scroll;
+            }
+            
+            #main-content {
+                position: relative;
+                background: #B3EFC1;
+                width: 980px;
+                margin: 20px auto;
+                min-height: calc(100% - 40px);
+                border: 1px solid #66CC88;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            
+            
+            .main-content-border {
+                z-index: -1;
+                position: fixed;
+                left: 0px;
+                right: 20px;
+                bottom: 0px;
+                height: 20px;
+                background: #D5F5D5;
+                
+                background: linear-gradient(to bottom, rgba(213, 245, 213, 0), #D5F5D5);
+            }
+            
+            .main-content-border.main-content-top-fix {
+                top: 143px;
+                bottom: auto;
+                
+                background: linear-gradient(to top, rgba(213, 245, 213, 0), #D5F5D5);
+            }
+            
+            
+                        
+        #instrument_content {
+        width: 100%;
+    // height: 400 px;
+    }
+
+    #main-content {
+        background-color: #B9DD94;
+        width: 100%;
+    }
+
+    input.hovered_button, button.hovered_button {
+        background-color: #DAD89C;
+        border-size: 2px;
+        border-color: grey;
+        color: black;
+        font-weight: normal;
+        font-size: 10pt;
+        height: 30px;
+        border: 1px solid #0B4C5F;
+    }
+
+    button.hovered_button {
+        height: 50px;
+    }
+
+    input.hovered_button:hover {
+        background-color: #CCCA93;
+        box-shadow: 0 0 15px;
+    }
+
+    button.hovered_buton:hover {
+        background-color: #CCCA93;
+        box-shadow: 0 0 15px;
+    }
+
+    .head {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .head tbody td {
+        border: 1px solid green;
+        width: 90%;
+        height: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 22pt;
+        background-color: #B9DD94;
+        color: #0B4C5F;
+        font-weight: normal;
+    }
+
+    table.pattern {
+        width: 100%;
+        background: #E0E1B2;
+    }
+
+    table.pattern tbody td, th, tfoot td {
+        border-color: #7AC77A;
+        border-style: solid;
+        color: #515447;
+        font-weight: normal;
+        text-align: center;
+        border-width: 1px 0px 0px 1px;
+        padding: 1px;
+
+    }
+
+    table.pattern th {
+        background: #DAD89C;
+        font-size: 12pt;
+    }
+
+    table.pattern td input[type='text'], table.pattern td select, textarea {
+        background: #E3ECA5;
+        padding-left: 10px;
+        color: #515447;
+        width: 195px;
+    }
+
+    fieldset label input {
+        background: #E3ECA5;
+        padding-left: 10px;
+        color: #515447;
+    }
+
+    .pattern td:last-child {
+        border-width: 1px 1px 0px 1px;
+    }
+
+    table.pattern td.lastcell {
+        border-width: 1px;
+    }
+
+    table.pattern td#headcell {
+        background-color: #DAD89C;
+        font-size: 14pt;
+    }
+
+    table.c-inp input {
+        text-align: center;
+    }
+
+    a img:hover {
+        box-shadow: 0 0 15px;
+    }
+
+    /* Custom */
+    .ui-datepicker {
+        z-index: 2000;
+    }
+
+
+
+    #content table.schedule p {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    table.schedule {
+        width: 100%;
+        /*   border-collapse: collapse;*/
+        border: 2px green solid;
+        text-align: center;
+    }
+
+    table.schedule td {
+        border: 1px green solid;
+    }
+
+    table.schedule td.pairs {
+        padding: 1px 1px 1px 1px;
+        cursor: pointer;
+    }
+
+    table.schedule td.pairs:hover {
+        background-color: #CAFACA;
+    }
+
+    table.schedule td.hoverBG {
+        border: 2px green solid;
+        background-color: E0E1B2;
+    }
+
+    table.schedule td.hoverBG:hover {
+        cursor: pointer;
+        background-color: #BBFFBB;
+    }
+
+
+td {
+  border: 1px solid #ccc;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal:target {
+  display: flex;
+}
+
+.modal__content {
+  /*background-color: #fff;
+  padding: 25px;*/
+}
+
+.modal__close{
+  color: #f00;
+}
+
+p.vertical{
+  //-webkit-transform: rotate(-90deg); 
+  //-moz-transform: rotate(-90deg);
+  //-ms-transform: rotate(-90deg);
+  //-o-transform: rotate(-90deg);
+  //transform: rotate(-90deg);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 10px;
+} 
+#MyTable{
+  border-style:solid;
+  border-color:black;
+  border-width:2px
+}
+
+#MyTable td{
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+  padding:3px;
+}
+
+.CellWithComment{
+  position:relative;
+}
+
+.CellComment{
+  display:none;
+  position:absolute; 
+  z-index:100;
+  border:1px;
+  background-color:rgb(206, 255, 236);
+  border-style:solid;
+  border-width:1px;
+  border-color:green;
+  padding:3px;
+  color:black; 
+  top:20px; 
+  left:20px;
+  font-weight: bold; 
+  font-size: 12px;
+  box-shadow: rgb(102, 170, 51) 3px 3px 4px;
+  text-align:left;
+  width:250px;
+}
+
+.CellWithComment:hover span.CellComment{
+  display:block;
+}
+
+a{
+color: #515447;
+}
+a:hover{
+color: #515447;
+}
