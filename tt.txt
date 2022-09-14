@@ -1,2 +1,0 @@
-INSERT INTO timetable VALUES("ПР3_1", "29.07.2022", "Основы Python", "lec", "6", "Карпович Артём Олегович", "", "");
-SELECT  date, pair FROM timetable WHERE ("group" = "ПР3_1" AND "type" = "lec") ORDER BY pair;

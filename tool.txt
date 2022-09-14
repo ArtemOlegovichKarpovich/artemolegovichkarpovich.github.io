@@ -1,5 +1,0 @@
-<div style="border: 1px solid green; padding: 3px; background: rgb(206, 255, 236); font-weight: bold; font-size: 12px; position: fixed; z-index: 1000; box-shadow: rgb(102, 170, 51) 3px 3px 4px; left: 952px; top: 383px;"><span style="font-weight: bold;"></span> Алгоритмы и структуры данных
-                <br>
-                <span style="font-weight: bold;">Порядок:</span> 1
-                <span style="font-weight: bold;">из</span> 1
-                <br></div>

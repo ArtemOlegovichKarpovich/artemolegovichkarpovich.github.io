@@ -1,1 +1,0 @@
-# artemolegovichkarpovich.github.io
